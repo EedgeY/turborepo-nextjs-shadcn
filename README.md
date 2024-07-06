@@ -14,7 +14,7 @@ To get started with this repository, follow the steps below:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/turborepo-shadcn-starter.git
+https://github.com/EedgeY/turborepo-nextjs-shadcn.git
 cd turborepo-shadcn-starter
 ```
 
