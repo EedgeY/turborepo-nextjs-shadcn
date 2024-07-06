@@ -15,7 +15,7 @@ To get started with this repository, follow the steps below:
 
 ```bash
 https://github.com/EedgeY/turborepo-nextjs-shadcn.git
-cd turborepo-shadcn-starter
+cd turborepo-nextjs-shadcn
 ```
 
 - `app1`: a [Next.js](https://nextjs.org/) app
