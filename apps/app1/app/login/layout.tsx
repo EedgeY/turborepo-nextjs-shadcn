@@ -1,4 +1,4 @@
-import LoginHeader from './components/header/login-header';
+import LoginHeader from '../components/header';
 
 export default function LoginLayout({
   children,
@@ -7,7 +7,6 @@ export default function LoginLayout({
 }) {
   return (
     <div>
-      <LoginHeader />
       <main className='container py-6'>
         <div className='flex justify-center'>{children}</div>
       </main>

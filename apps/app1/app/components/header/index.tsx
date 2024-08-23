@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Button } from '@repo/ui/components/ui/button';
 
-export default function LoginHeader() {
+export default function Header() {
   return (
     <div>
       <header className='flex h-16 justify-between px-4  items-center '>
