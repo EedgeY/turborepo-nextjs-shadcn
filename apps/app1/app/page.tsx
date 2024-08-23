@@ -1,6 +1,6 @@
-import { Button } from '@repo/ui/components/ui/button';
 import { getSessionUrl } from '@repo/supabase/data';
 import { redirect } from 'next/navigation';
+import LogoutButton from './components/logout-button';
 
 export default async function Home() {
   const sessionUrl = await getSessionUrl();
@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
       <h1>Hello, {sessionUrl.url}!</h1>
-      <Button>Click me</Button>
+      <LogoutButton />
     </main>
   );
 }

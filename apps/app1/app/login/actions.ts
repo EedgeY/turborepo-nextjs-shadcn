@@ -37,7 +37,7 @@ export const signInWithEmail = async (email: string, password: string) => {
   // Customer or Farm によってリダイレクト先を変更
   const { data: userData, error: fetchError } = await supabase
     .from('users')
-    .select('type, url')
+    .select('*')
     .eq('user_id', user.id)
     .single();
 
@@ -50,11 +50,7 @@ export const signInWithEmail = async (email: string, password: string) => {
   }
 
   if (userData) {
-    if (userData.type === 'customer') {
-      redirect(`/customer/${userData.url}`);
-    } else {
-      redirect(`/farm/${userData.url}`);
-    }
+    redirect('/');
   } else {
     await supabase.auth.signOut();
     return {

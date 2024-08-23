@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@repo/ui/components/ui/button';
 import {
   FormControl,
   FormDescription,
@@ -8,15 +8,15 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
+} from '@repo/ui/components/ui/form';
+import { Input } from '@repo/ui/components/ui/input';
 import { Eye, EyeOff } from 'lucide-react';
 import { useState } from 'react';
 import { FieldPath, FieldValues, UseFormReturn } from 'react-hook-form';
 
 export default function PasswordForm<
   TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
 >({
   form,
   name,

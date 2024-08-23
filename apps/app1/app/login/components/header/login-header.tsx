@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Button } from '@repo/ui/components/ui/button';
 
 export default function LoginHeader() {
   return (
@@ -10,7 +10,7 @@ export default function LoginHeader() {
         <div className=''>
           <Button asChild variant='ghost'>
             <Link href={'/'} className='text-lg font-bold  '>
-              エスカウ
+              LOGO
             </Link>
           </Button>
         </div>
