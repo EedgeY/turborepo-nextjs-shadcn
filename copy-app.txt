@@ -1,0 +1,3 @@
+＊　appの複製/delete
+cp -R apps/<copyしたいapp> apps/<新しいappnのname>
+rm -r apps/<deleteしたいapp>
